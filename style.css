@@ -1,0 +1,63 @@
+body {
+  box-sizing: content-box;
+  margin: 0;
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+ul {
+  padding-left: 0;
+}
+.app {
+  max-width: 400px;
+  display: block;
+  margin: 25px auto 0;
+  padding: 30px;
+  border-radius: 10px;
+  border: solid 1px #ddd;
+}
+.row {
+  display: flex;
+}
+.message {
+  width: 100%;
+  padding: 10px; 
+  box-sizing: border-box;
+}
+.todo li {
+  list-style-type: none;
+  position: relative;
+  padding: 10px;
+}
+.todo li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+.todo input {
+  opacity: 0;
+  position: absolute;
+}
+.checked {
+  text-decoration: line-through;
+}
+/* Кнопка закрытия */
+span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+span:hover {
+  background: #ddd;
+}
